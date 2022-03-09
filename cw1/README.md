@@ -74,10 +74,10 @@ W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
 
 ### TO DO
  - [X] 1A.c 
- - [] 1B.c
- - [] 1C.c
- - [] 1D.c
- - [] 1E.c
+ - [ ] 1B.c
+ - [ ] 1C.c
+ - [ ] 1D.c
+ - [ ] 1E.c
  
 
 > Zaktualizowano 09.03.2022
