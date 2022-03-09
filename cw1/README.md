@@ -8,8 +8,10 @@ Pliki z kodem:
  - 1C.c
  - 1D.c
  - 1E.c
+
 Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacji
  - Makefile
+ 
 Plik README w formacie .md
  - README.md
 
