@@ -1,6 +1,13 @@
 # Systemy Operacyjne 2022
 > Autor: Tymoteusz Białkowski
 
+### Postępy:
+ - [X] 1A.c 
+ - [ ] 1B.c
+ - [ ] 1C.c
+ - [ ] 1D.c
+ - [ ] 1E.c
+ 
 ## Zawartość folderu
 Pliki z kodem:
  - 1A.c 
@@ -72,12 +79,6 @@ Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
 W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
 ```make tar```
 
-### TO DO
- - [X] 1A.c 
- - [ ] 1B.c
- - [ ] 1C.c
- - [ ] 1D.c
- - [ ] 1E.c
- 
+
 
 > Zaktualizowano 09.03.2022
