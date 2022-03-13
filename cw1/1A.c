@@ -13,11 +13,13 @@ int main()
     int PGID = getpgid(PID);
 
     printf("\nIdentyfikatory procesu:\n");
-    printf("UID: %d\n", getuid());
-    printf("GID: %d\n", getgid());
-    printf("PID: %d\n", getpid());
-    printf("PPID: %d\n", getppid());
-    printf("PGID: %d\n", getpgid(PID));
+    printf("| UID | GID | PID | PPID| PGID|\n");
+    printf("| %d|", getuid());
+    printf(" %d|", getgid());
+    printf(" %d|", getpid());
+    printf(" %d|", getppid());
+    printf(" %d|\n", getpgid(PID));
+    printf("===============================\n");
     
     return 0;
 }
