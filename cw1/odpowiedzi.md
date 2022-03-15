@@ -1,6 +1,7 @@
-# Odpowiedzi do zadań 1
+# Odpowiedzi do zadań 1.c 1.d oraz 1.e
 
 ## Podpunkt C
+Zrzut z pstree
 
 systemd(1)─┬─ModemManager(738)─┬─{ModemManager}(756)
            │                   └─{ModemManager}(759)
