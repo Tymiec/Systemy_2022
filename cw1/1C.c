@@ -3,8 +3,10 @@
 #include <sys/types.h>
 #include <unistd.h>
  
+
 int main() 
 {
+    int i;
     int UID = getuid();
     int GID = getgid();
     int PID = getpid();
@@ -21,7 +23,7 @@ int main()
     printf(" %d|\n", PGID);
     printf("=====================================\n");
 
-    for (int i = 1; i < 4; i++)
+    for (i = 1; i < 4; i++)
     {
         switch(fork())
         {            
@@ -35,6 +37,7 @@ int main()
                 PPID = getppid();
                 PGID = getpgid(PID);
                 
+                sleep(10);
                 printf("| %d|", i);
                 printf("| %d|", UID);
                 printf(" %d|", GID);
@@ -43,7 +46,6 @@ int main()
                 printf(" %d|\n", PGID);
                 break;
             default:
-                wait(NULL);
                 break;
         }
     }

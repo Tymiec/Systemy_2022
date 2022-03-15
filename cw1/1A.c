@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
- 
 
 int main() 
 {
@@ -14,11 +13,11 @@ int main()
 
     printf("\nIdentyfikatory procesu:\n");
     printf("| UID | GID | PID | PPID| PGID|\n");
-    printf("| %d|", getuid());
-    printf(" %d|", getgid());
-    printf(" %d|", getpid());
-    printf(" %d|", getppid());
-    printf(" %d|\n", getpgid(PID));
+    printf("| %d|", UID);
+    printf(" %d|", GID);
+    printf(" %d|", PID);
+    printf(" %d|", PPID);
+    printf(" %d|\n", PGID);
     printf("===============================\n");
     
     return 0;

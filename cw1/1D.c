@@ -3,8 +3,12 @@
 #include <sys/types.h>
 #include <unistd.h>
  
+
 int main() 
 {
+    int i = 0;
+    int generation = 0;
+
     int UID = getuid();
     int GID = getgid();
     int PID = getpid();
@@ -21,7 +25,7 @@ int main()
     printf(" %d|\n", PGID);
     printf("=====================================\n");
 
-    for (int i = 1; i < 4; i++)
+    for (i = 1; i < 4; i++)
     {
         switch(fork())
         {            
@@ -29,23 +33,25 @@ int main()
                 perror("Fork error detected");
                 exit(1);
             case 0:
+                generation++;
+
                 UID = getuid();
                 GID = getgid();
                 PID = getpid();
                 PPID = getppid();
                 PGID = getpgid(PID);
                 
-                printf("| %d|", i);
-                printf("| %d|", UID);
+                printf("| %d|", generation);    /* zaznaczamy generację */
+                printf(" %d|", UID);
                 printf(" %d|", GID);
                 printf(" %d|", PID);
                 printf(" %d|", PPID);
                 printf(" %d|\n", PGID);
+                sleep(1);
                 break;
             default:
-                wait(NULL);
                 break;
         }
     }
-    return 0;
+    sleep(4);
 }

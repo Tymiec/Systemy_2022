@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
- 
+
 int main() 
 {
     int UID = getuid();
@@ -33,6 +33,7 @@ int main()
                 GID = getgid();
                 PID = getpid();
                 PPID = getppid();
+                setpgid (0, 0);         /* funkcja setpgid z wartością pgrp równą 0 powoduje że proces staje się liderem nowej grupy procesów*/
                 PGID = getpgid(PID);
                 
                 printf("| %d|", i);

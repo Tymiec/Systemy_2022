@@ -4,9 +4,9 @@
 ### Postępy:
  - [X] 1A.c 
  - [X] 1B.c
- - [ ] 1C.c
- - [ ] 1D.c
- - [ ] 1E.c
+ - [X] 1C.c
+ - [X] 1D.c
+ - [X] 1E.c
  
 ## Zawartość folderu
 Pliki z kodem:
@@ -30,11 +30,13 @@ Wywołać funkcję ```fork``` trzy razy (najlepiej w pętli ```for```) i wypisa�
 identyfikatory dla procesu macierzystego oraz wszystkich procesów potomnych. 
 Przy pomocy funkcji ```wait```sprawić, aby proces macierzysty zaczekał na zakończenie
 wszystkich procesów potomnych.
+
 ## Ćwiczenie 1.C
 Jak w (b), tylko przy użyciu funkcji ```sleep``` (! nie używać funkcji ``` wait```) sprawiać
 by procesy potomne były adoptowane przez proces ```init``` lub ```systemd;``` poleceniem
 ```pstree -p``` z poziomu powłoki wyświetlić drzewo procesów w danym systemie i
 zidentyfikować proces adoptujący osierocone procesy.
+
 ## Ćwiczenie 1.D
 Jak w (b), tylko wstawić funkcję ```sleep``` w takich miejscach programu, aby
 procesy pojawiały się na ekranie grupowane pokoleniami od najstarszego do
@@ -81,4 +83,4 @@ W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
 
 
 
-> Zaktualizowano 09.03.2022
+> Zaktualizowano 15.03.2022
