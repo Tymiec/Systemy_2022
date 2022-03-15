@@ -1,4 +1,5 @@
 # Odpowiedzi do zadań 1.c 1.d oraz 1.e
+> Autor: Tymoteusz Białkowski
 
 ## Podpunkt C
 Zrzut z pstree
@@ -459,3 +460,5 @@ Proces macierzysty:                             _________________PID: 10419_____
 
 Przy n-krotnym użyciu funkcji fork() w pętli powstanie 2^n procesów potomnych ponieważ przy kazdym wywolaniu funkcji fork()
 kazdy dzialajacy proces stworzy swój proces potomny.
+
+> Zaktualizowano 15.03.2022
