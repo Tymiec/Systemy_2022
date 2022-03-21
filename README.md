@@ -8,5 +8,9 @@ Procesy potomne: fork
 Uruchamianie programów: exec
  - [Przejdź do zadania](cw2)
 
+  ## Ćwiczenie 3
+Uruchamianie programów: exec
+ - [Przejdź do zadania](cw3)
+
 
 > Zaktualizowano 21.03.2022
