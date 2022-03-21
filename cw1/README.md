@@ -22,22 +22,22 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Ćwiczenie 1.A
+## Podpunkt 1.A
 Napisać program wypisujący identyfikatory UID, GID, PID, PPID i PGID dla danego procesu
 
-## Ćwiczenie 1.B
+## Podpunkt 1.B
 Wywołać funkcję ```fork``` trzy razy (najlepiej w pętli ```for```) i wypisać powyższe 
 identyfikatory dla procesu macierzystego oraz wszystkich procesów potomnych. 
 Przy pomocy funkcji ```wait```sprawić, aby proces macierzysty zaczekał na zakończenie
 wszystkich procesów potomnych.
 
-## Ćwiczenie 1.C
+## Podpunkt 1.C
 Jak w (b), tylko przy użyciu funkcji ```sleep``` (! nie używać funkcji ``` wait```) sprawiać
 by procesy potomne były adoptowane przez proces ```init``` lub ```systemd;``` poleceniem
 ```pstree -p``` z poziomu powłoki wyświetlić drzewo procesów w danym systemie i
 zidentyfikować proces adoptujący osierocone procesy.
 
-## Ćwiczenie 1.D
+## Podpunkt 1.D
 Jak w (b), tylko wstawić funkcję ```sleep``` w takich miejscach programu, aby
 procesy pojawiały się na ekranie grupowane pokoleniami od najstarszego do
 najmłodszego, a proces macierzysty kończył się dopiero po procesach potomnych
@@ -45,7 +45,7 @@ najmłodszego, a proces macierzysty kończył się dopiero po procesach potomnyc
 (w pliku tekstowym), drzewo genealogiczne tworzonych procesów z zaznaczonymi
 identyfikatorami PID, PPID i PGID.
 
-## Ćwiczenie 1.E
+## Podpunkt 1.E
 Jak w (b), tylko przy u ̇zyciu fukcji ```setpgid``` sprawić by każdy proces potomny
 stawał się liderem swojej własnej grupy procesów.
 

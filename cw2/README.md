@@ -13,7 +13,7 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Ćwiczenie A
+## Podpunkt A
 
 Zmodyfikować program z ćwiczenia 1b, tak aby komunikaty procesów potomnych by były
 wypisywane przez program uruchamiany przez funkcję execlp. Nazwę programu do 

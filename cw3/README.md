@@ -3,7 +3,9 @@
  
 ## Zawartość folderu
 Pliki z kodem:
- - 
+ - 3A.c
+ - 3B.c
+ - 3C.c
 
 
 Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacji
@@ -12,10 +14,14 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Ćwiczenie 3.A
+## Podpunkt 3.A
 
 Jeden program który ustawia obsługę sygnału na 3 sposoby zgodnie z opcją podaną jako argument wywołania programu, a następnie czeka na sygnał 
 (funkcja ```pause()```); numer sygnału przekazywać jako argument wywołania programu; niech proces wypisze na ekranie swój PID, a funkcja do własnej obsługi sygnału wypisze jego numer i nazwę (można wstawić krótki sleep).
+
+## Podpunkt 3.B
+
+Dwa programy - pierwszy w procesie potomnym uruchamia program z podpunktu (a), po czym z procesu macierzystego wysyła do niego sygnał; w procesie macierzystym przed wywołaniem funkcji kill() proszę wstawić funkcję sleep() z krótkim czasem uśpienia.
 
 ## Jak uruchomic programy: 
 
