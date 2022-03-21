@@ -1,4 +1,4 @@
-# Systemy Operacyjne 2022
+# Ćwiczenie 3
 > Autor: Tymoteusz Białkowski
  
 ## Zawartość folderu
@@ -12,7 +12,10 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Ćwiczenie 3
+## Ćwiczenie 3.A
+
+Jeden program który ustawia obsługę sygnału na 3 sposoby zgodnie z opcją podaną jako argument wywołania programu, a następnie czeka na sygnał 
+(funkcja ```pause()```); numer sygnału przekazywać jako argument wywołania programu; niech proces wypisze na ekranie swój PID, a funkcja do własnej obsługi sygnału wypisze jego numer i nazwę (można wstawić krótki sleep).
 
 ## Jak uruchomic programy: 
 

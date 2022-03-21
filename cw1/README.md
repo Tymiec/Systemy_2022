@@ -1,4 +1,4 @@
-# Systemy Operacyjne 2022
+# Ćwiczenie 1
 > Autor: Tymoteusz Białkowski
 
 ### Postępy:

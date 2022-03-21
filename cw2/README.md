@@ -1,4 +1,4 @@
-# Systemy Operacyjne 2022
+# Ćwiczenie 2
 > Autor: Tymoteusz Białkowski
  
 ## Zawartość folderu
@@ -13,7 +13,7 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Ćwiczenie 2
+## Ćwiczenie A
 
 Zmodyfikować program z ćwiczenia 1b, tak aby komunikaty procesów potomnych by były
 wypisywane przez program uruchamiany przez funkcję execlp. Nazwę programu do 
