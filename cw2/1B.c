@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) /* przekazanie argumentów */
                 exit(1);
             case 0:
                 execl(argv[1], argv[1], NULL); /* wywołujemy program wypisywanie */
-                perror("execl error"); /* kontrola błędu*/
+                perror("Execl error detected"); /* kontrola błędu*/
                _exit(2); 
                 break;
             default:
