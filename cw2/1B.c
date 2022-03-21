@@ -4,8 +4,15 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main() 
+int main(int argc, char *argv[]) 
 {
+
+    if (argc != 2) /* kontrola erroru*/
+    {
+        printf("Nie podano argumentów");
+        exit(1);
+    }
+
     int UID = getuid();
     int GID = getgid();
     int PID = getpid();
@@ -30,19 +37,9 @@ int main()
                 perror("Fork error detected");
                 exit(1);
             case 0:
-                UID = getuid();
-                GID = getgid();
-                PID = getpid();
-                PPID = getppid();
-                setpgid (0, 0);         /* funkcja setpgid z wartością pgrp równą 0 powoduje że proces staje się liderem nowej grupy procesów*/
-                PGID = getpgid(PID);
-                
-                printf("| %d|", i);
-                printf("| %d|", UID);
-                printf(" %d|", GID);
-                printf(" %d|", PID);
-                printf(" %d|", PPID);
-                printf(" %d|\n", PGID);
+                execl(argv[1], argv[1], NULL);
+                perror("execl error");
+               _exit(2); 
                 break;
             default:
                 wait(NULL);
