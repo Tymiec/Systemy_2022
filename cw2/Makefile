@@ -1,4 +1,3 @@
-
 .SUFFIXES: .c .cpp .o .x .h
 
 DIR = `basename $(CURDIR)`
@@ -44,4 +43,4 @@ clean:
 tar: clean
 	(cd ../; tar -cvzf $(DIR).tar.gz  $(DIR) )
 
-#.SILENT:
+.SILENT:
