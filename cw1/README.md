@@ -23,7 +23,7 @@ Plik README w formacie .md
  - README.md
 
 ## Podpunkt 1.A
-Napisać program wypisujący identyfikatory UID, GID, PID, PPID i PGID dla danego procesu
+Napisać program wypisujący identyfikatory ```UID```, ```GID```, ```PID```, ```PPID``` i ```PGID``` dla danego procesu
 
 ## Podpunkt 1.B
 Wywołać funkcję ```fork``` trzy razy (najlepiej w pętli ```for```) i wypisać powyższe 
