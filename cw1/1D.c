@@ -40,18 +40,18 @@ int main()
                 PID = getpid();
                 PPID = getppid();
                 PGID = getpgid(PID);
-                
+                sleep(1);
                 printf("| %d|", generation);    /* zaznaczamy generację */
                 printf(" %d|", UID);
                 printf(" %d|", GID);
                 printf(" %d|", PID);
                 printf(" %d|", PPID);
                 printf(" %d|\n", PGID);
-                sleep(1);
+                
                 break;
             default:
                 break;
         }
     }
-    sleep(4);
+    sleep(4); /* dodane aby program nie zamykal się w brzydkki sposob w konsoli */
 }

@@ -40,17 +40,43 @@ i jego archiwizacji.
 
 
 ### Uruchamianie
-Aby uruchomic program, nalezy wykonac komende:
-```make run```
+
+Aby uruchomić podpunkt 3A, wykonujemy komendę:
+
+```bash
+make SIGNAL=? OPTION=? runA
+```
+gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+
+
+Aby uruchomić podpunkt 3B, należy wykonać komendę:
+
+```bash
+make SIGNAL=? OPTION=? runB
+```
+gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+
+
+Aby uruchomić podpunkt C, należy wykonać komendę:
+
+```bash
+make SIGNAL=? OPTION=? runC
+```
+gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+
 
 ### Czyszczenie
 Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
-```make clean```
+```bash
+make clean
+```
 
 ### Archiwizacja
 W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
-```make tar```
+```bash
+make tar
+```
 
 
 
-> Zaktualizowano 21.03.2022
+> Zaktualizowano 11.04.2022

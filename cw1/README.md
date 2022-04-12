@@ -1,6 +1,11 @@
 # Ćwiczenie 1
 > Autor: Tymoteusz Białkowski
 
+
+TODO:
+sprawdzenie 
+wait 
+setpgid
 ### Postępy:
  - [X] 1A.c 
  - [X] 1B.c
