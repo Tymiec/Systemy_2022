@@ -1,13 +1,15 @@
-# Ćwiczenie 4
+# Ćwiczenie 6
 > Autor: Tymoteusz Białkowski
  
 ## Zawartość folderu
 Pliki z kodem:
- - 4.c
+ - program.c
+ - powielacz.c
+ - sem.c
+ - sem.h
 
-Pliki wejścia i wyjścia:
- - wejscie
- - wyjscie
+Plik z numerem:
+ - numer.txt
 
 Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacji
  - Makefile
@@ -15,11 +17,13 @@ Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacj
 Plik README w formacie .md
  - README.md
 
-## Podpunkt 4
+## Podpunkt 6.A
 
-Program który implementuje problem producenta i konsumenta, 
-przesyłając tekst z jednego pliku do drugiego przy pomocy potoków nienazwanych
-wypisując przy tym co czyta oraz zapisuje w danym momencie.
+Implementacja wzajemnego wykluczania procesów poprzez semafory
+
+## Podpunkt 6.B
+
+Tworzenia procesów potomnych oraz uruchamiania w nich programu pierwszego
 
 ## Jak uruchomic programy: 
 
@@ -30,8 +34,17 @@ i jego archiwizacji.
 
 ### Uruchamianie
 Aby uruchomic program, nalezy wykonac komende:
-```make program RFILE= WFILE=``
-> Jako RFILE podajemy plik do odczytu a jakot WFILE plik do którego wpisujemy
+```make program PROG1= NPROCES= NCSESION=```
+
+PROG1 - Nazwa programu do wzajemnego wykluczania
+(standardowo: program)
+
+NPROCES - Liczbę procesów potomnych
+
+NCSESION - Liczbę sekcji krytycznych
+
+czyli
+```make program PROG1=program NPROCES=2 NCSESION=2```
 
 ### Czyszczenie
 Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
@@ -43,4 +56,4 @@ W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
 
 
 
-> Zaktualizowano 14.04.2022
+> Zaktualizowano 17.05.2022
