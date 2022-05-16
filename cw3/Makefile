@@ -47,15 +47,15 @@ $(EXEC4): $(OBJS4) $(LIBS4)
 
 runA: $(EXEC1)
 	clear
-	./$(EXEC1) $(SIGNAL) $(OPTION)
+	./$(EXEC1) $(SYGNAL) $(OPCJA)
 
 runB: $(EXEC2) $(EXEC1)
 	clear
-	./$(EXEC2) $(SIGNAL) $(OPTION) $(EXEC1)
+	./$(EXEC2) $(SYGNAL) $(OPCJA) $(EXEC1)
 
 runC: $(EXEC3) $(EXEC1) $(EXEC4)
 	clear
-	./$(EXEC3) $(SIGNAL) $(OPTION) $(EXEC4) $(EXEC1)
+	./$(EXEC3) $(SYGNAL) $(OPCJA) $(EXEC4) $(EXEC1)
 
 .PHONY: clean tar
 
@@ -64,5 +64,3 @@ clean:
 
 tar: clean
 	(cd ../; tar -cvzf $(DIR).tar.gz  $(DIR) )
-	
-.SILENT:

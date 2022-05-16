@@ -44,25 +44,25 @@ i jego archiwizacji.
 Aby uruchomić podpunkt 3A, wykonujemy komendę:
 
 ```bash
-make SIGNAL=? OPTION=? runA
+make SYGNAL=? OPCJA=? runA
 ```
-gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+gdzie `SYGNAL` to numer sygnału, a OPCJA sposób obsłużenia `[default/ignore/custom]`
 
 
 Aby uruchomić podpunkt 3B, należy wykonać komendę:
 
 ```bash
-make SIGNAL=? OPTION=? runB
+make SYGNAL=? OPCJA=? runB
 ```
-gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+gdzie `SYGNAL` to numer sygnału, a OPCJA sposób obsłużenia `[default/ignore/custom]`
 
 
 Aby uruchomić podpunkt C, należy wykonać komendę:
 
 ```bash
-make SIGNAL=? OPTION=? runC
+make SYGNAL=? OPCJA=? runC
 ```
-gdzie `SIGNAL` to numer sygnału, a OPTION sposób obsłużenia `[default/ignore/custom]`
+gdzie `SYGNAL` to numer sygnału, a OPCJA sposób obsłużenia `[default/ignore/custom]`
 
 
 ### Czyszczenie

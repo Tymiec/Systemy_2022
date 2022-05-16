@@ -3,7 +3,11 @@
  
 ## Zawartość folderu
 Pliki z kodem:
- - 4A.c
+ - 4.c
+
+Pliki wejścia i wyjścia:
+ - wejscie
+ - wyjscie
 
 Plik Makefile do kompilacji, linkowania, uruchamiania, czyszczenia i archiwizacji
  - Makefile
@@ -13,7 +17,9 @@ Plik README w formacie .md
 
 ## Podpunkt 4
 
-
+Program który implementuje problem producenta i konsumenta, 
+przesyłając tekst z jednego pliku do drugiego przy pomocy potoków nienazwanych
+wypisując przy tym co czyta oraz zapisuje w danym momencie.
 
 ## Jak uruchomic programy: 
 
@@ -36,4 +42,4 @@ W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
 
 
 
-> Zaktualizowano 21.03.2022
+> Zaktualizowano 14.04.2022
